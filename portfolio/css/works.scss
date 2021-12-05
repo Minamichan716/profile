@@ -1,0 +1,100 @@
+h2{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 100px 0 50px 0;
+    text-align: center;
+    border-bottom: 3px solid rgb(57,83,112);
+    position: relative;
+
+    &::after{
+        position: absolute;
+        content: "";
+        display: block;
+        border-bottom: 3px solid rgb(248,206,193);
+    bottom: -3px;
+    width: 30%;
+
+    }
+}
+
+.work1 a,
+.work2 a{
+    display: block;
+}
+
+.work1 a:hover{
+    -moz-box-shadow: 6px 6px 21px -3px rgba(52, 41, 66, 0.8);
+    -webkit-box-shadow: 6px 6px 21px -3px rgba(52, 41, 66, 0.8);
+    -ms-box-shadow: 6px 6px 21px -3px rgba(52, 41, 66, 0.8);
+    box-shadow: 6px 6px 21px -3px rgba(52, 41, 66, 0.8);
+    cursor: pointer;
+    transition: all ease-in 0.3s;
+    
+}
+
+.work2 a:hover{
+    -moz-box-shadow: 6px 6px 21px -3px rgba(52, 41, 66, 0.8);
+    -webkit-box-shadow: 6px 6px 21px -3px rgba(52, 41, 66, 0.8);
+    -ms-box-shadow: 6px 6px 21px -3px rgba(52, 41, 66, 0.8);
+    box-shadow: 6px 6px 21px -3px rgba(52, 41, 66, 0.8);
+    cursor: pointer;
+    transition: all ease-in 0.3s;
+
+}
+
+
+.site img{
+    text-align: center;
+    width: 300px;
+}
+
+.site{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 100px;
+   width: 80%;
+   margin: 0 auto;
+}
+
+
+
+ .banner img{
+    text-align: center;
+    width: 300px;
+}
+
+.banner1:hover{
+
+    transform: scale(3);
+    transition: all ease-in 0.8s;
+}
+.banner2:hover{
+    transform: scale(3);
+    transition: all ease-in 0.8s;
+}
+
+.banner{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+@media (max-width:376px){
+
+    .site{
+        flex-direction: column;
+    }
+
+    .banner{
+        flex-direction: column;
+
+
+    }
+    
+}
