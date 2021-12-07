@@ -1,0 +1,332 @@
+// 共通設定
+html{
+  font-size: 16px;
+}
+
+body{
+  width: 100%;
+background-color: #F2EFE9;
+}
+
+header{
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url(../images/computer-g57448f377_1920.jpg);
+  background-size: cover;
+}
+
+header img{
+width: 100%;
+height: 100%;
+}
+
+h1{
+  padding: 50px;
+  color: #fff;
+  background-color: rgba(149, 127, 172,0.8);
+  border-radius: 40px ;
+  z-index: 3;
+  font-size: 3rem;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  object-fit: contain;
+
+  & span{
+    font-size: 1.5rem;
+  }
+}
+
+#g-nav-list ul {
+  z-index: 999;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  & li {
+    padding: 25px;
+    background-color:rgb(38,28,29);
+  }
+
+  & li a{
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  & li a:hover{
+    transform: scale(1.3);
+    animation-name: hover;
+    transition: all ease-in 0.5s;
+  }
+}
+
+// About Page
+
+h2{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 3rem;
+  padding: 100px 0 50px 0;
+  text-align: center;
+  border-bottom: 3px solid rgb(57,83,112);
+  position: relative;
+
+  &::after{
+      position: absolute;
+      content: "";
+      display: block;
+  border-bottom: 3px solid rgb(248,206,193);
+  bottom: -3px;
+  width: 30%;
+
+      
+  }
+}
+
+
+
+.intro {
+  padding-top: 100px;
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+.intro img{
+  border-radius: 200px 100px 50px 30px / 180px 150px 70px 30px;
+}
+
+.my-name{
+  font-size: 2rem;
+}
+
+.wrap{
+  padding-top: 30px;
+  display: flex;
+}
+
+.intro1{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 300px;
+  text-align: center;
+  line-height: 1.7;
+  
+}
+
+#kingdom,
+#udemy{
+  
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+
+
+
+
+.contents {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.hoo{
+  width: 50%;
+  height: 100px;
+
+}
+
+#kingdom,
+#udemy {
+  font-size: 1rem;
+  vertical-align:middle ;
+  line-height:2;
+  text-align:left;
+  position: relative;
+  padding: 1.2em;
+  border: 2px solid rgb(237,109,124); /* 枠線の太さ・色 */
+  color: #555555; /* 文字色 */
+  box-shadow: 2px 2px 1px #c7c7c7;/* 影の色 */
+  border-radius: 8px; /* 角の丸み */
+ }
+ .title-kingdom,
+ .title-udemy {
+  position: absolute;
+  left: 20px; /*（left）に変更すると左 */
+  top: -15px;
+  padding: 0 .5em;
+  font-weight: bold;
+  font-size: 1em;
+  color: rgb(82,43,61);
+  background-color: #F2EFE9;
+ }
+
+
+//  Like Page
+
+.list{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  &:nth-of-type(2){
+      flex-direction: row-reverse;
+  }
+  &:nth-of-type(3){
+    padding-bottom: 300px;
+  }
+}
+.pic img{
+  border-radius: 30px;
+}
+
+.pic{
+  position: relative;
+
+  &::before,
+  &::after{
+      content: '';
+position: absolute;
+width: 0;
+height: 0;
+border-style: solid;
+  }
+
+  &::before{
+      top: -15px;
+      right: -15px;
+      border-width: 0 80px 80px 0;
+      border-color: transparent rgb(216,199,210) transparent transparent;
+  }
+  &::after{
+      bottom: -15px;
+left: -15px;
+border-width: 80px 0 0 80px;
+border-color: transparent transparent transparent rgb(216,199,210);
+  }
+}
+
+.textLove{
+  line-height: 2;
+
+  & span{
+      font-size: 2rem;
+      background: linear-gradient(transparent 60%, rgb(191,88,156) 60%);
+  }
+} 
+
+
+
+  
+
+
+
+
+footer{
+  width: 100%;
+  background-color:rgb(38,28,29);
+}
+
+footer p{
+text-align: center;
+ padding: 30px;
+ color: #fff;
+ 
+}
+
+
+
+@media(max-width:750px){
+
+h2{
+  font-size: 1rem;
+  padding: 50px 0 25px 0;
+}
+
+.my-name{
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.image{
+  margin: 0 auto;
+
+}
+
+.wrap{
+  flex-direction: column;
+  align-items: center;
+
+  &dd{
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+  .intro{
+    padding: 50px 25px;
+    gap: 30px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .intro img{
+    // border-radius: 50%;
+    width: 300px;
+  }
+
+  .intro1{
+    padding-bottom: 50px;
+  }
+
+  .list{
+    flex-direction: column;
+    padding-top: 50px;
+
+    &:nth-of-type(3){
+      padding-bottom: 100px;
+    }
+  }
+
+  .list:nth-of-type(2){
+    flex-direction: column;
+
+  }
+
+  .contents{
+    flex-direction: column;
+  }
+ #kingdom{
+   width: 100%;
+   font-size: 0.8rem;
+ }
+ #udemy{
+   width: 100%;
+   font-size: 0.8rem;
+
+ }
+
+.pic img{
+  text-align: center;
+  width: 100%;
+}
+
+ .hoo {
+   width: 100%;
+   height: 100%;
+ }
+
+}
+  
