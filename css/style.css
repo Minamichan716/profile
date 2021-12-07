@@ -10,6 +10,9 @@ body {
 
 header {
   height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url(../images/computer-g57448f377_1920.jpg);
+  background-size: cover;
 }
 
 header img {
@@ -260,7 +263,7 @@ footer p {
   color: #fff;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 750px) {
   h2 {
     font-size: 1rem;
     padding: 50px 0 25px 0;
@@ -268,6 +271,9 @@ footer p {
   .my-name {
     text-align: center;
     font-size: 1.5rem;
+  }
+  .image {
+    margin: 0 auto;
   }
   .wrap {
     -webkit-box-orient: vertical;
