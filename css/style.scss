@@ -9,9 +9,9 @@ background-color: #F2EFE9;
 }
 
 header{
-  height: 100vh;
+  height: 80vh;
   background-repeat: no-repeat;
-  background-image: url(../images/computer-g57448f377_1920.jpg);
+  background-image: url(../images/top2.jpg);
   background-size: cover;
 }
 
@@ -22,14 +22,15 @@ height: 100%;
 
 h1{
   padding: 50px;
-  color: #fff;
-  background-color: rgba(149, 127, 172,0.8);
+  color: #000;
+  background-color: rgba(255,255,255,0.8);
   border-radius: 40px ;
   z-index: 3;
   font-size: 3rem;
   position: absolute;
   top:50%;
   left: 50%;
+  font-family: 'Yeseva One', cursive;
   transform: translate(-50%,-50%);
   object-fit: contain;
 
@@ -74,6 +75,7 @@ h2{
   text-align: center;
   border-bottom: 3px solid rgb(57,83,112);
   position: relative;
+  font-family: 'Yeseva One', cursive;
 
   &::after{
       position: absolute;
