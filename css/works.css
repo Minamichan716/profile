@@ -115,7 +115,8 @@ h2::after {
   transition: all ease-in 0.8s;
 }
 
-.banner {
+.banner,
+.flyer {
   padding-top: 100px;
   padding-bottom: 150px;
   display: -webkit-box;
@@ -128,6 +129,24 @@ h2::after {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+}
+
+.flyer1:hover {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  -webkit-transition: all ease-in 0.8s;
+  transition: all ease-in 0.8s;
+}
+
+footer {
+  width: 100%;
+  background-color: #261c1d;
+}
+
+footer p {
+  text-align: center;
+  padding: 30px;
+  color: #fff;
 }
 
 @media (max-width: 750px) {
