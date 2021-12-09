@@ -39,12 +39,11 @@ header{
 h2{
     width: 80%;
     margin: 0 auto;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 100px 0 50px 0;
     text-align: center;
     border-bottom: 3px solid rgb(57,83,112);
     position: relative;
-    font-family: 'Yeseva One', cursive;
 
     &::after{
         position: absolute;
@@ -115,7 +114,8 @@ h2{
 }
 
 .banner,
-.flyer{
+.flyer,
+.logo{
     padding-top: 100px;
     padding-bottom: 150px;
     display: flex;
@@ -125,11 +125,6 @@ h2{
 
 }
 
-.flyer1:hover{
-
-    transform: scale(3);
-    transition: all ease-in 0.8s;
-}
 footer{
     width: 100%;
     background-color:rgb(38,28,29);
